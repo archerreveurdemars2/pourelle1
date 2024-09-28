@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 92vh;
+    background: rgb(111, 106, 209);
+    position: relative;
+}
+
+.heart {
+    height: 100px;
+    width: 100px;
+    background: red;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px red;
+    animation: heart 0.6s linear infinite;
+}
+
+@keyframes heart {
+    0% {
+        transform: rotate(-45deg) scale(1.00);
+    }
+    80% {
+        transform: rotate(-45deg) scale(0.90);
+    }
+    100% {
+        transform: rotate(-45deg) scale(0.80);
+    }
+}
+
+.heart::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: red;
+    top: -55%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px red;
+}
+
+.heart::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: red;
+    right: -55%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px red;
+}
+
+.corner-heart {
+    height: 50px;
+    width: 50px;
+    background: red;
+    position: absolute;
+    transform: rotate(-45deg);
+    box-shadow: -5px 5px 45px red;
+}
+
+.corner-heart::before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: red;
+    top: -55%;
+    border-radius: 25px;
+    box-shadow: -5px 5px 45px red;
+}
+
+.corner-heart::after {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: red;
+    right: -55%;
+    border-radius: 25px;
+    box-shadow: -5px 5px 45px red;
+}
+
+.top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.top-right {
+    top: 20px;
+    right: 20px;
+}
+
+.bottom-left {
+    bottom: 1px;
+    left: 20px;
+}
+
+.bottom-right {
+    bottom: 1px;
+    right: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+}
+.container .tenor-gif-embed{
+    max-width: 300px;
+}
+.container .btn{
+    display: flex;
+    gap: 19px;
+
+}
+.btn a {
+    text-decoration: none;
+    color: rgb(144, 42, 165);
+    background: rgb(246, 246, 246);
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: o.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+}
+.rtn a {
+    text-decoration: none;
+    color: rgb(144, 42, 165);
+    background: rgb(246, 246, 246);
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: o.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+}
+
+
